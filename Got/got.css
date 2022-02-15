@@ -1,0 +1,124 @@
+/** General CSS **/
+:root {
+  --mainColor: #000;
+  --secondaryColor: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--mainColor);
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  margin: auto;
+  width: 85%;
+}
+/** End **/
+/** Start main **/
+.title {
+  position: absolute;
+  top: 19%;
+  left: 39%;
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 2rem;
+}
+h1 {
+  animation: anime 1s ease-in-out 3s infinite forwards;
+}
+@keyframes anime {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.2), 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 5px rgba(255, 0, 0, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 1), 0 0 5px rgba(255, 0, 0, 0.8);
+  }
+}
+.img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  /* position: absolute; */
+}
+.img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.form-search {
+  margin: 100px auto;
+}
+.form-search input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 21%;
+  background-color: #333;
+}
+.sort {
+  width: 100px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 17%;
+  background-color: #333;
+}
+.actors {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 60px;
+  margin: 150px 70px 70px 70px;
+  padding: 30px;
+}
+.actors .card-actor {
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #000;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(255, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+.card-actor:hover {
+  margin-top: -15px;
+}
+.card-actor:hover .card-body {
+  opacity: 1;
+  height: 90px;
+}
+.actor-img img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  text-align: left;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0;
+  height: 0px;
+  transition: 0.9s all ease-in-out;
+  color: #fff;
+  margin-top: 15px;
+}
+.card-body h2 {
+  margin-bottom: 15px;
+}
+.card-body span {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/** End Main **/
