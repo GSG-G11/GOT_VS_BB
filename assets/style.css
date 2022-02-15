@@ -1,0 +1,93 @@
+/** General CSS **/
+:root{
+    --mainColor : #000;
+    --secondaryColor:#fff;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: var(--mainColor);
+}
+/** End **/
+/** Start Home Section **/
+h1{
+    color: var(--secondaryColor);
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+
+}
+h1 span{
+    color:rgba(255, 0,0, 0.9);
+}
+p{
+    color: var(--secondaryColor);
+    text-align: center;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+}
+.home{
+    display: grid;
+    color: var(--secondaryColor);
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    height: 400px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ .home-Got{
+    grid-column: 1/7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 0,0, 0.2) 0px 0px 10px 2px;
+    transition: 0.5s all ease-in-out;
+
+}
+.home-Got:hover{
+    margin-top: -20px;
+}
+.img{
+    width: 200px;
+    margin: auto;
+}
+ .img img{
+    max-width: 100%;
+    height: 267px;
+}
+.btn-vote{
+    display: block;
+    margin: 10px auto;
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 10px;
+    color: var(--secondaryColor);
+    width: 100px;
+}
+.num-vote{
+margin-left: 80px;
+}
+.home-Breaking{
+    grid-column: 7/13;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 0,0, 0.2) 0px 0px 10px 2px;
+    transition: 0.6s all ease-in-out;
+}
+.home-Breaking:hover{
+    margin-top: -20px;
+}
+
+/** End Home Section **/
+
+
