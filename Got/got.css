@@ -20,7 +20,7 @@ body {
 /** Start main **/
 .title {
   position: absolute;
-  top: 4%;
+  top: 19%;
   left: 39%;
   color: var(--secondaryColor);
   text-align: center;
@@ -42,23 +42,23 @@ h1 {
   }
 }
 .img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  /* position: absolute; */
 }
 .img img {
   max-width: 100%;
   border-radius: 50%;
 }
 .form-search {
-  margin: 40px auto;
-  /* background-color: red; */
+  margin: 100px auto;
 }
 .form-search input {
   width: 50%;
   padding: 10px;
   border-radius: 20px;
   border: none;
-  /* border: 2px solid rgba(255, 0, 0, 0.3); */
   outline: none;
   position: absolute;
   left: 21%;
@@ -79,7 +79,7 @@ h1 {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 60px;
-  margin: 70px;
+  margin: 150px 70px 70px 70px;
   padding: 30px;
 }
 .actors .card-actor {
