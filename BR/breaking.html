@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="breaking.css" />
+    <title>BREAKING BAD</title>
+  </head>
+  <body>
+      <header class="center">
+        <img src="./images/logo.png" alt="logo image" />
+      </header>
+      <section class="search">
+        <form>
+          <input
+          id="input"
+            type="text"
+            className="form-control"
+            placeholder="search character"
+            vslue="text"
+            autofocus
+          />
+          <select name="select" id="sort">
+            <option value="desc">desc</option>
+             <option value="asc">asc</option>
+          </select>
+        </form>
+      </section>
+      <section class="cards">
+         <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="Actor Image" />
+            </div>
+            <div class="card-back">
+              <h1>Details</h1>
+              <ul>
+                <li><strong>Actor Name:</strong> walter white </li>
+                <li><strong>Nickname:</strong> hisenberg</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>
