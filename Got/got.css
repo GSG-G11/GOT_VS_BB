@@ -65,17 +65,6 @@ h1 {
   left: 21%;
   background-color: #333;
 }
-.sort {
-  width: 100px;
-  background-color: #333;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  position: absolute;
-  right: 17%;
-  background-color: #333;
-}
 .actors {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
@@ -123,63 +112,53 @@ h1 {
 }
 
 /** End Main **/
-@media (max-width:600px){
-    .title {
-        position: absolute;
-        top: 19%;
-        left: 33%;
-        color: #fff;
-    }
-    .form-search input{
-        top: 29%;
-        left: 28%;
-     }
-    
-    .sort{
-        left: 44%;
-        top: 39%;
-    }
-    .actors{
-        display: block;
-        margin-top: 179px;
-    }
-    .actors .card-actor{
-        margin-bottom: 20px;
-    }
-    .actor-img{
-        margin: auto;
-        width: 200px;
-      
-    }
- 
+@media (max-width: 600px) {
+  .title {
+    position: absolute;
+    top: 19%;
+    left: 33%;
+    color: #fff;
+  }
+  .form-search input {
+    top: 29%;
+    left: 28%;
+  }
+
+  .actors {
+    display: block;
+    margin-top: 179px;
+  }
+  .actors .card-actor {
+    margin-bottom: 20px;
+  }
+  .actor-img {
+    margin: auto;
+    width: 200px;
+  }
 }
 
-@media (min-width:600px) and (max-width:900px){
-    .title {
-        position: absolute;
-        top: 19%;
-        left: 33%;
-        color: #fff;
-    }
-    .form-search input{
-        top: 29%;
-        left: 28%;
-     }
-     .sort{
-        left: 44%;
-        top: 39%;
-    }
-    .actors{
-        grid-template-columns: 50% 50%;
-        grid-gap:20px;
-        margin-top: 179px;
-    }
-    
+@media (min-width: 600px) and (max-width: 900px) {
+  .title {
+    position: absolute;
+    top: 19%;
+    left: 33%;
+    color: #fff;
+  }
+  .form-search input {
+    top: 29%;
+    left: 28%;
+  }
+
+  .actors {
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    margin-top: 179px;
+  }
 }
-@media (min-width:900px) and (max-width:1000px){
-    .actors{
-        grid-template-columns: 30% 30% 30% ;                          ;
-        grid-gap:20px;
-        margin-top: 179px;
-    }
+@media (min-width: 900px) and (max-width: 1000px) {
+  .actors {
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    margin-top: 179px;
+  }
 }
