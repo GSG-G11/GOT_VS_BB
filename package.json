@@ -1,0 +1,22 @@
+{
+  "name": "got_vs_br",
+  "version": "1.0.0",
+  "description": "Simple web page for the game of thrones  and breaking bad series fans",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/GOT_VS_BR.git"
+  },
+  "author": "mo7amedehab97",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/GOT_VS_BR/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/GOT_VS_BR#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

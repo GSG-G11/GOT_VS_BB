@@ -16,40 +16,23 @@
     <title>BREAKING BAD</title>
   </head>
   <body>
-      <header class="center">
-        <img src="./images/logo.png" alt="logo image" />
-      </header>
-      <section class="search">
-        <form>
-          <input
+    <header class="center">
+      <img src="./images/logo.png" alt="logo image" />
+    </header>
+    <section class="search">
+      <form>
+        <input
           id="input"
-            type="text"
-            className="form-control"
-            placeholder="search character"
-            vslue="text"
-            autofocus
-          />
-          <select name="select" id="sort">
-            <option value="desc">desc</option>
-             <option value="asc">asc</option>
-          </select>
-        </form>
-      </section>
-      <section class="cards">
-         <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="Actor Image" />
-            </div>
-            <div class="card-back">
-              <h1>Details</h1>
-              <ul>
-                <li><strong>Actor Name:</strong> walter white </li>
-                <li><strong>Nickname:</strong> hisenberg</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+          type="text"
+          className="form-control"
+          placeholder="search character"
+          vslue="text"
+          autofocus
+        />
+      </form>
+    </section>
+    <section class="cards" id="cards"></section>
+    <script src="dom.js"></script>
+    <script src="logic.js"></script>
   </body>
 </html>
