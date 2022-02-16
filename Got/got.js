@@ -1,7 +1,8 @@
 const actors = document.querySelector(".actors");
+const searchinput = document.getElementById("search")
+console.log(searchinput)
 let url = "https://thronesapi.com/api/v2/Characters";
 const handleData = (data) => {
-  console.log(data);
   data.forEach((e) => {
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("card-actor");
@@ -40,7 +41,6 @@ const fetch = (method, url, callback) => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
-        console.log(JSON.parse(xhr.responseText));
         callback(JSON.parse(xhr.responseText));
       } else if (xhr.status === 404) {
         console.log("HTTP error 404 :page not found ");
@@ -52,4 +52,30 @@ const fetch = (method, url, callback) => {
   xhr.open(method, url);
   xhr.send();
 };
+
 fetch("GET", url, handleData);
+
+function search (arr,name){
+ return arr.filter((ele) =>{
+   return ele.fullName.toLowerCase().includes(name.toLowerCase())
+
+ })
+}
+
+searchinput.addEventListener("click" , () => {
+  actors.innerHTML=''
+fetch("GET" ,url , (data) =>{
+  let arr = data.map(ele => {
+          return ele
+  }) 
+
+  handleData(search(arr,searchinput.value))
+  searchinput.textContent=""
+
+  
+})
+
+})
+
+
+
