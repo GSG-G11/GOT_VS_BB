@@ -1,6 +1,5 @@
 const actors = document.querySelector(".actors");
-const searchinput = document.getElementById("search")
-console.log(searchinput)
+const searchinput = document.getElementById("search");
 let url = "https://thronesapi.com/api/v2/Characters";
 const handleData = (data) => {
   data.forEach((e) => {
@@ -55,27 +54,20 @@ const fetch = (method, url, callback) => {
 
 fetch("GET", url, handleData);
 
-function search (arr,name){
- return arr.filter((ele) =>{
-   return ele.fullName.toLowerCase().includes(name.toLowerCase())
-
- })
+function search(arr, name) {
+  return arr.filter((ele) => {
+    return ele.fullName.toLowerCase().includes(name.toLowerCase());
+  });
 }
 
-searchinput.addEventListener("click" , () => {
-  actors.innerHTML=''
-fetch("GET" ,url , (data) =>{
-  let arr = data.map(ele => {
-          return ele
-  }) 
+searchinput.addEventListener("click", () => {
+  actors.innerHTML = "";
+  fetch("GET", url, (data) => {
+    let arr = data.map((ele) => {
+      return ele;
+    });
 
-  handleData(search(arr,searchinput.value))
-  searchinput.textContent=""
-
-  
-})
-
-})
-
-
-
+    handleData(search(arr, searchinput.value));
+    searchinput.textContent = "";
+  });
+});
