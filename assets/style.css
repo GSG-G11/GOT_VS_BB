@@ -12,6 +12,11 @@ body {
   background-color: var(--mainColor);
   font-family: "Roboto", sans-serif;
 }
+.container {
+  margin: auto;
+  width: 85%;
+  overflow-x: hidden;
+}
 /** End **/
 /** Start Home Section **/
 h1 {
@@ -88,3 +93,26 @@ p {
 }
 
 /** End Home Section **/
+/*** Media Query **/
+@media (max-width:900px){
+  body{
+    height: 1150px;
+  }
+  h1{
+    position: absolute;
+    top: 10%;
+    left: 23%
+  }
+  p{
+    left: 32%;
+  }
+  .home{
+    display: block;
+  }
+  .home-Got{
+    margin: 30px auto;
+  }
+  .home-Breaking{
+    margin: 60px auto;
+  }
+}
