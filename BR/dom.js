@@ -1,4 +1,6 @@
 const mainSection = document.getElementById("cards");
+const input = document.getElementById("input");
+const URLS = "https://www.breakingbadapi.com/api/characters";
 
 // function to add events to the btns and inputs
 const addEvent = (selector, action, callback) => {
@@ -69,5 +71,18 @@ const createCards = (arr) => {
     mainSection.appendChild(cardsDiv);
   });
 };
-let URLS = "https://www.breakingbadapi.com/api/characters";
+
 fetch("GET", URLS, createCards);
+
+// search function
+addEvent(input, "click", searchCharacter);
+function searchCharacter(e) {
+  mainSection.innerHTML = " ";
+  fetch("GET", URLS, (arr) => {
+    let array = arr.map((element) => {
+      return element;
+    });
+    createCards(search(array, input.value));
+    input.value = " ";
+  });
+}
